@@ -1,11 +1,14 @@
-var raster = {
-  aantalRijen: 6,
-  aantalKolommen: 9,
-  celGrootte: null,
+class raster {
+  constructor(r,k) {
+  this.aantalRijen = r;
+  this.aantalKolommen = k;
+  this.celGrootte = null;
+  }
+  
   
   berekenCelGrootte() {
     this.celGrootte = canvas.width/this.aantalKolommen;
-  },
+  }
   teken() {
     push();
     noFill();
